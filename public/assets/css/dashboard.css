@@ -1,0 +1,277 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: var(--body-collor);
+    transition: var(--transition-5);
+}
+:root {
+    /* Primary collor */
+    --body-collor: #fff;
+    --sidebar-color: #fff;
+    --primary-color: #10abcf;
+    --primary-color-light: #f6f5ff;
+    --toggle-color: #ddd;
+    --text-color: #333;
+    /* transition */
+    --transition-1: all 0.1s ease;
+    --transition-2: all 0.2s ease;
+    --transition-3: all 0.3s ease;
+    --transition-4: all 0.4s ease;
+    --transition-5: all 0.5s ease;
+}
+/* code style */
+
+/* sidebar */
+.sidebar-company {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding: 15px 15px;
+    background: var(--sidebar-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: var(--transition-5);
+    z-index: 9999;
+}
+.sidebar-company.close {
+    width: 88px;
+    transition: var(--transition-4);
+}
+
+/* use the same stye */
+.sidebar-company.close .text {
+    opacity: 0;
+    transition: var(--transition-2);
+}
+
+.sidebar-company .text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--transition-4);
+    white-space: nowrap;
+    opacity: 1;
+}
+.sidebar-company .images {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-company .sidebar-header {
+    position: relative;
+}
+.sidebar-company li.nav-title {
+    height: 50px;
+    /* background-color: rebeccapurple; */
+    margin: 10px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar-company li.nav-links {
+    height: 50px;
+    /* background-color: rebeccapurple; */
+    margin: -10px 0 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.sidebar-company li.mode {
+    height: 50px;
+    /* background-color: rebeccapurple; */
+    margin: -10px 0 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.sidebar-company li.nav-links .icon {
+    min-width: 60px;
+    /* margin-right: 10px; */
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-company li.mode .icon {
+    min-width: 60px;
+    /* margin-right: 10px; */
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-company li.nav-links .icon, .sidebar-company li.nav-links .text,.side-menu .nav-title .title-menus, .side-menu .mode .icon, .side-menu .mode .text {
+    color: var(--text-color);
+    transition: var(--transition-1);
+}
+body.dark-mode {
+    /* Primary collor */
+    --body-collor: #18191a;
+    --sidebar-color: #222222;
+    --primary-color: #10abcf;
+    /* --primary-color-light: #f6f5ff; */
+    --toggle-color: #fff;
+    --text-color: #fff;
+}
+.sidebar-header .image-text span img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.sidebar-header .image-text{
+    display: flex;
+    align-items: center;
+}
+.sidebar-company .sidebar-header .toggle {
+    position: absolute;
+    top: 50%;
+    right:-25px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 18px;
+    transition: var(--transition-3);
+}
+.sidebar-company.close .sidebar-header .toggle {
+    color: var(--sidebar-color);
+    transform: translateY(-50%) rotate(180deg);
+}
+body.dark-mode .sidebar-company .sidebar-header .toggle {
+    color: var(--text-color);
+}
+.sidebar-company li.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: var(--transition-3);
+}
+.sidebar-company li.nav-links a:hover {
+    background: var(--primary-color);
+    /* border-radius: 5px; */
+    padding: 5px 10px;
+}
+.sidebar-company.close li.nav-links a:hover {
+    padding: 0;
+}
+.sidebar-company li.nav-links a:hover .icon, .sidebar-company li.nav-links a:hover .text {
+    color: var(--sidebar-color);
+}
+.sidebar-company .side-menu {
+    height: calc(100% - 50px);
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar-company .menus {
+    margin-top: 10px;
+}
+.sidebar-company .menus .nav-title .title-menus{
+    margin-left: 10px;
+    text-align: center;
+}
+.side-menu .mode {
+    position: relative;
+    /* background-color: var(--primary-color-light); */
+    /* border-radius: 6px; */
+}
+.side-menu .mode .moon-sun {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+.side-menu .mode i {
+    position: absolute;
+    transition: var(--transition-3);
+}
+.side-menu .mode i.sun {
+    opacity: 0;
+}
+body.dark-mode .side-menu .mode i.sun {
+    opacity: 1;
+}
+body.dark-mode .side-menu .mode i.moon {
+    opacity: 0;
+}
+.side-menu .mode .toggle-switch {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    /* background-color: rebeccapurple; */
+    cursor: pointer;
+    transition: var(--transition-5);
+}
+.toggle-switch .switch {
+    position: relative;
+    width: 44px;
+    height: 22px;
+    border-radius: 15px;
+    background-color: var(--toggle-color);
+}
+.switch::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    background-color: var(--sidebar-color);
+    transition: var(--transition-3);
+}
+body.dark-mode .switch::before {
+    left: 25px;
+}
+.nav-links.active {
+    background-color: var(--primary-color); /* ganti sesuai tema kamu */
+}
+.nav-links.active .icon,
+.nav-links.active .nav-text {
+    color: var(--sidebar-color); /* warna ikon & teks saat aktif */
+}
+
+/* Main Content */
+section.container-company {
+    position: relative;
+    left: 250px;
+    height: auto;
+    width: calc(100% - 250px);
+    background: var(--body-collor);
+    transition: var(--transition-5);
+}
+section.container-company .container-main {
+    padding: 10px 30px;
+    height: auto;
+    width: 100%;
+    background: var(--body-collor);
+    transition: var(--transition-5);
+}
+.sidebar-company.close ~ section.container-company {
+    left: 88px;
+    height: auto;
+    width: calc(100% - 88px);
+}
