@@ -10,3 +10,7 @@ Route::get('/product', function () {
     $page = 'Product';
     return view('product.product', compact('page'));
 });
+Route::get('/jobs', function () {
+    $page = 'Pekerjaan';
+    return view('pekerjaan.jobs', compact('page'));
+});

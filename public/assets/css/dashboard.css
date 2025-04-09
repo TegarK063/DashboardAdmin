@@ -264,7 +264,7 @@ section.container-company {
     transition: var(--transition-5);
 }
 section.container-company .container-main {
-    padding: 10px 30px;
+    padding: 10px 20px;
     height: auto;
     width: 100%;
     background: var(--body-collor);

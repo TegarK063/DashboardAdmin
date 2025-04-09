@@ -1,0 +1,21 @@
+.container-tables {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 5px
+}
+.table-pekerjaan {
+    width: 95%;
+    height: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+/* .table-pekerjaan td,
+.table-pekerjaan th {
+    padding: 12px;
+} */
+.row-header-table .th-header {
+    background-color: #e8faff;
+}

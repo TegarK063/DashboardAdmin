@@ -17,6 +17,7 @@
 
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/pekerjaan.css') }}">
 </head>
 
 <body>
@@ -61,8 +62,8 @@
                             <span class="text nav-text">Mission</span>
                         </a>
                     </li>
-                    <li class="nav-links">
-                        <a href="#">
+                    <li class="nav-links {{ request()->is('jobs') ? 'active' : '' }}">
+                        <a href="{{ url('jobs') }}">
                             <i class='bx bxs-briefcase icon'></i>
                             <span class="text nav-text">Jobs</span>
                         </a>
