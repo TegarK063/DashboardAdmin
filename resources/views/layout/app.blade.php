@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $page ?? 'Jastru' }}</title>
     {{-- Link --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,66 +35,66 @@
             <i class='bx bxs-right-arrow toggle'></i>
         </header>
         <div class="side-menu">
-            <div class="menus">
+            <div class="menu-menus">
                 <li class="nav-title">
                     <p class="title-menus">Pages</p>
                 </li>
                 <ul class="menu-links">
-                    <li class="nav-links {{ request()->is('/') ? 'active' : '' }}">
+                    <li class="links-navs {{ request()->is('/') ? 'active' : '' }}">
                         <a href="{{ url('/') }}">
-                            <i class='bx bxs-dashboard icon'></i>
+                            <i class='bx bxs-dashboard icone'></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-links {{ request()->is('product*') ? 'active' : '' }}">
+                    <li class="links-navs {{ request()->is('product*') ? 'active' : '' }}">
                         <a href="{{ url('product') }}">
-                            <i class='bx bxs-box icon'></i>
+                            <i class='bx bxs-box icone'></i>
                             <span class="text nav-text">Product</span>
                         </a>
                     </li>
-                    <li class="nav-links">
+                    <li class="links-navs">
                         <a href="#">
-                            <i class='bx bxs-wrench icon'></i>
+                            <i class='bx bxs-wrench icone'></i>
                             <span class="text nav-text">Services</span>
                         </a>
                     </li>
-                    <li class="nav-links">
+                    <li class="links-navs">
                         <a href="#">
-                            <i class='bx bxs-bullseye icon'></i>
+                            <i class='bx bxs-bullseye icone'></i>
                             <span class="text nav-text">Mission</span>
                         </a>
                     </li>
-                    <li class="nav-links {{ request()->is('jobs') ? 'active' : '' }}">
+                    <li class="links-navs {{ request()->is('jobs') ? 'active' : '' }}">
                         <a href="{{ url('jobs') }}">
-                            <i class='bx bxs-briefcase icon'></i>
+                            <i class='bx bxs-briefcase icone'></i>
                             <span class="text nav-text">Jobs</span>
                         </a>
                     </li>
-                    <li class="nav-links">
+                    <li class="links-navs">
                         <a href="#">
-                            <i class='bx bx-money icon'></i>
+                            <i class='bx bx-money icone'></i>
                             <span class="text nav-text">Transaction</span>
                         </a>
                     </li>
-                    <li class="nav-links">
+                    <li class="links-navs">
                         <a href="#">
-                            <i class='bx bxs-wallet icon'></i>
+                            <i class='bx bxs-wallet icone'></i>
                             <span class="text nav-text">Wallet</span>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="bottom-content">
-                <li class="nav-links">
+                <li class="links-navs">
                     <a href="#">
-                        <i class='bx bxs-log-out icon'></i>
+                        <i class='bx bxs-log-out icone'></i>
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
                 <li class="mode">
                     <div class="moon-sun">
-                        <i class='bx bxs-moon icon moon'></i>
-                        <i class='bx bxs-sun icon sun'></i>
+                        <i class='bx bxs-moon icone moon'></i>
+                        <i class='bx bxs-sun icone sun'></i>
                     </div>
                     <span class="mode-text text">Dark Mode</span>
                     <div class="toggle-switch">

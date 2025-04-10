@@ -14,3 +14,7 @@ Route::get('/jobs', function () {
     $page = 'Pekerjaan';
     return view('pekerjaan.jobs', compact('page'));
 });
+Route::get('/tambah-pekerjaan', function () {
+    $page = 'Tambah Pekerjaan';
+    return view('pekerjaan.tambah-pekerjaan', compact('page'));
+});

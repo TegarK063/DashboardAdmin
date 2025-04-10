@@ -1,9 +1,16 @@
-.container-tables {
+.isi-content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    margin-top: 20px;
     overflow: hidden;
-    padding: 5px
+    padding: 5px;
+    background-color: #F8F9FA;
+}
+.container-tables {
+    overflow-x: auto;
+    padding: 5px;
+    -webkit-overflow-scrolling: touch;
 }
 .table-pekerjaan {
     width: 95%;
@@ -11,6 +18,8 @@
     border-collapse: collapse;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
+    min-width: 1200px;
+    background-color: #fff;
 }
 /* .table-pekerjaan td,
 .table-pekerjaan th {
@@ -18,4 +27,13 @@
 } */
 .row-header-table .th-header {
     background-color: #e8faff;
+    text-align: center;
+    vertical-align: middle;
+}
+.body-tables td {
+    text-align: justify;
+}
+.body-tables img {
+    max-width: 80px;
+    max-height: 80px;
 }
