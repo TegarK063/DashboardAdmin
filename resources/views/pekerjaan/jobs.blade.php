@@ -43,11 +43,9 @@
                                 vel repudiandae amet sequi quos obcaecati temporibus commodi, nobis accusantium itaque
                                 voluptas
                                 natus exercitationem, perspiciatis libero.</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab quas nesciunt dignissimos
-                                sed
-                                vel repudiandae amet sequi quos obcaecati temporibus commodi, nobis accusantium itaque
-                                voluptas
-                                natus exercitationem, perspiciatis libero.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, commodi! Mollitia, dolorem
+                                dignissimos, aut quo debitis totam sunt ipsa magni iusto doloribus amet dolor reprehenderit.
+                                Necessitatibus voluptatum inventore ducimus sint.</td>
                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab quas nesciunt dignissimos
                                 sed
                                 vel repudiandae amet sequi quos obcaecati temporibus commodi, nobis accusantium itaque
